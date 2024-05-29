@@ -1,5 +1,7 @@
 //PROGRAMA BASE CARRINHO - NINO'S SCUDERIA (1TDS1) 
 
+// Declaração de veriáveis ---------------
+
 // PINOS UTILIZADOS CONFORME O ENDEREÇAMENTO ABAIXO
 
 //Definição do uso dos pinos do Arduino
@@ -21,7 +23,9 @@ SoftwareSerial bluetooth(pinBtRx, pinBtTx); // RX, TX
 //int velocidade = 0; // *Não utilizada no código* Guarda o valor da velocidade na condição falsa = > Velocidade dele é nula (0)/Parada
 //bool sentido = 1; // *Não utilizada no código* Verdadeira 
 //int estado = 0; // *Não utilizada no código* Guarda valor do estado na condição falsa = > Estado inicial dele é parado (0)
- 
+
+//Configuração do projeto no Arduino  -------------------------------
+
 //Configuração do projeto no Arduino
 void setup() {
   //Configura o estado das portas do Arduino
@@ -39,9 +43,9 @@ void setup() {
 
   //Inicia a cominicação serial com o módulo bluetooth
   bluetooth.begin(9600);
-
-
 }
+
+// Lógica do projeto do Arduino ------------
 
 void loop() {
 // Variável para armazenar o dado recebido 
